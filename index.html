@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manoj Varma | Product Leader Portfolio</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Manoj Varma | Product Leader Portfolio" />
+    <meta name="description" content="Senior Product Manager crafting innovative payroll, fintech, and HR technology solutions. Explore my product portfolio and professional journey." />
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://umanojvarma.github.io/Resume/" />
+    <meta property="og:title" content="Manoj Varma | Product Leader Portfolio" />
+    <meta property="og:description" content="Building seamless global payroll and fintech experiences that balance innovation, compliance, and human empathy." />
+    <meta property="og:image" content="https://raw.githubusercontent.com/umanojvarma/Resume/main/og-preview.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Manoj Varma | Product Leader Portfolio" />
+    <meta name="twitter:description" content="Senior Product Manager in fintech and payroll innovation. Explore my work and professional story." />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/umanojvarma/Resume/main/og-preview.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" />
+
+    <!-- Fonts & CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/4d2b1a7f0b.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <a href="#hero" class="nav-item active">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#competencies" class="nav-item">Skills</a>
+        <a href="#timeline" class="nav-item">Experience</a>
+        <a href="#contact" class="nav-item download-btn">Connect</a>
+    </nav>
+
+    <div id="container">
+        <!-- HERO -->
+        <section id="hero" class="module active">
+            <div class="background-animation"></div>
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Manoj Varma">Manoj Varma</h1>
+                <h2>Senior Product Manager <span class="blinking-cursor">|</span></h2>
+                <p>Building seamless global payroll and fintech experiences that balance innovation, compliance, and human empathy.</p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/manoj-varma" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="mailto:manoj.varma@email.com"><i class="fas fa-envelope"></i>Email</a>
+                    <a href="https://github.com/manojvarma" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="module">
+            <h2 class="module-title">About Me</h2>
+            <div class="content-box">
+                <p>
+                    I am a <strong>Senior Product Manager</strong> with over 18 years of cross-functional experience spanning fintech, payroll, payments, and human capital management.  
+                    I craft scalable solutions that bring parity across complex systems and elevate user experiences.
+                </p>
+                <p>
+                    From launching innovative payroll features at ADP to leading fintech products at WaveCrest and consulting for Fortune 500 clients, my focus has remained constant — simplify complexity, amplify value.
+                </p>
+            </div>
+        </section>
+
+        <!-- COMPETENCIES -->
+        <section id="competencies" class="module">
+            <h2 class="module-title">Core Competencies</h2>
+            <ul class="competencies-grid">
+                <li>Product Strategy & Roadmapping</li>
+                <li>API Design & Integration</li>
+                <li>Data-Driven Decision Making</li>
+                <li>Cross-Border Payroll Innovation</li>
+                <li>Agile & Scaled Scrum Delivery</li>
+                <li>UX Research & Experience Design</li>
+                <li>Stakeholder Communication</li>
+                <li>Market & Competitive Intelligence</li>
+            </ul>
+        </section>
+
+        <!-- EXPERIENCE TIMELINE -->
+        <section id="timeline" class="module">
+            <h2 class="module-title">Professional Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <time>2022 – Present</time>
+                        <h3>Senior Product Manager | ADP</h3>
+                        <p>Leading innovations in payroll automation, global parity, and workforce data synchronization across multiple regions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <time>2019 – 2022</time>
+                        <h3>Product Manager | Solultima Technologies</h3>
+                        <p>Built and launched fintech-driven HR modules enhancing user control and data transparency.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <time>2014 – 2018</time>
+                        <h3>Associate Vendor Manager | WaveCrest Payments</h3>
+                        <p>Contributed to the B21 crypto card and multi-currency payment frameworks in early fintech ecosystems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="module">
+            <h2 class="module-title">Let’s Connect</h2>
+            <div class="content-box center">
+                <p>I love discussing new ideas around global payroll, fintech, and AI-driven workforce innovation.</p>
+                <p>
+                    <a href="mailto:manoj.varma@email.com" class="expand-btn">Get in Touch</a>
+                </p>
+                <p class="muted">© 2025 Manoj Varma | Crafted with passion and a pinch of curiosity</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Loader fade out
+        window.addEventListener('load', () => {
+            document.getElementById('loader').classList.add('hidden');
+        });
+
+        // Scroll reveal for modules
+        const modules = document.querySelectorAll('.module');
+        const navLinks = document.querySelectorAll('.nav-item');
+
+        function activateSection() {
+            let index = modules.length;
+            while(--index && window.scrollY + 100 < modules[index].offsetTop) {}
+            navLinks.forEach(link => link.classList.remove('active'));
+            navLinks[index].classList.add('active');
+        }
+
+        activateSection();
+        window.addEventListener('scroll', activateSection);
+    </script>
+</body>
+</html>
