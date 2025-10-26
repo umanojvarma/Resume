@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manoj Varma Uppalapati - Senior Product Manager</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8; /* Light background to mimic paper */
+            color: #333;
+            max-width: 8.5in; /* Standard paper width for better print/PDF feel */
+            min-height: 11in; /* Standard paper height */
+            margin: 30px auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding in element's total width and height */
+            -webkit-print-color-adjust: exact; /* Ensure background colors print */
+            print-color-adjust: exact;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            color: #1a1a1a;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 0;
+        }
+
+        .contact-bar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #e0e6f7; /* Light blue background for contact */
+            padding: 10px 0;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            font-size: 0.95em;
+        }
+        .contact-bar span {
+            display: flex;
+            align-items: center;
+            color: #333;
+        }
+        .contact-bar a {
+            color: #0056b3;
+            text-decoration: none;
+            margin-left: 5px;
+            font-weight: 500;
+        }
+        .contact-bar a:hover {
+            text-decoration: underline;
+        }
+        .contact-bar span::before {
+            content: ''; /* No specific icon, relying on provided text */
+            margin-right: 5px;
+        }
+        /* Custom icons for contact info to match document's spacing/look */
+        .contact-bar span:first-child::before { content: '+'; font-size: 1.1em; font-weight: bold; margin-right: 0px; }
+        .contact-bar span:nth-child(2)::before { content: '|'; margin: 0 10px; color: #aaa; }
+        .contact-bar span:nth-child(3)::before { content: '|'; margin: 0 10px; color: #aaa; }
+
+
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.6em;
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .job-title {
+            font-weight: bold;
+            display: inline-block;
+        }
+        .job-duration {
+            float: right;
+            font-style: italic;
+            color: #666;
+            font-size: 0.95em;
+        }
+        .company-name {
+            font-style: italic;
+            color: #555;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0;
+        }
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+        }
+        ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #0056b3;
+            font-weight: bold;
+        }
+
+        /* Specific styling for nested bullet points */
+        ul.nested-list {
+            list-style: none;
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        ul.nested-list li::before {
+            content: '•';
+            color: #555; /* Less prominent for nested */
+            font-weight: normal;
+        }
+        .summary-impacts ul {
+            padding-left: 0; /* Align with summary text */
+        }
+        .summary-impacts ul li {
+             padding-left: 20px;
+        }
+
+        .professional-skills-list ul li {
+            margin-bottom: 12px; /* More space between main skill categories */
+        }
+        .professional-skills-list ul li strong {
+            color: #0056b3; /* Highlight skill categories */
+            font-weight: 600;
+        }
+
+        .personal-dossier ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0;
+        }
+        .personal-dossier ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+        }
+        .personal-dossier ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #333;
+            font-weight: normal;
+            font-size: 1em;
+        }
+
+        /* Education specifics */
+        .education-item {
+            margin-bottom: 15px;
+        }
+        .education-degree {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .education-institution {
+            font-style: italic;
+            color: #666;
+            display: block;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-page">
+        <header>
+            <h1>MANOJ VARMA UPPALAPATI</h1>
+            <p>SENIOR PRODUCT MANAGER</p>
+            <div class="contact-bar">
+                <span>+91 9966618050</span>
+                <span>manojuvarma@gmail.com</span>
+                <span><a href="https://linkedin.com/in/manoj-varma" target="_blank">linkedin.com/in.manoj-varma</a></span>
+            </div>
+        </header>
+
+        <section id="summary">
+            <h2>SUMMARY</h2>
+            <p>Senior Product Manager with expertise in HCM, Global Payroll, and Payments, focused on modernizing payroll experiences using AI.</p>
+            <h3>Key impacts include:</h3>
+            <ul class="summary-impacts">
+                <li>Launched features that reduced processing time by 10% and simplified exceptions.</li>
+                <li>Transitioned worker data fixes to self-service, lowering support demands.</li>
+                <li>Increased team throughput by 15% through disciplined backlog management.</li>
+                <li>Leveraged Pendo insights to prioritize high-value tasks.</li>
+                <li>Developed partnerships to enhance product capabilities and drive payroll innovation.</li>
+                <li>Led a cross-functional team to integrate AI-driven analytics for better forecasting.</li>
+                <li>Championed user-centered design, boosting user satisfaction by 20%.</li>
+                <li>Established a feedback loop with customers for effective feature refinement.</li>
+                <li>Pioneered technologies to streamline payroll processes, setting a new efficiency standard.</li>
+            </ul>
+        </section>
+
+        <section id="professional-skills">
+            <h2>PROFESSIONAL SKILLS</h2>
+            <ul class="professional-skills-list">
+                <li><strong>Product Management:</strong> Product Vision & Roadmap, Agile/Scrum, Backlog Management, Feature Definition (Epics, Stories), Release Management, Product Lifecycle Management, Market Analysis, Competitive Intelligence, USP Development</li>
+                <li><strong>Domain Expertise:</strong> Core Payroll Processing, Core HR, Payments, Fintech Solutions, Transaction Efficiency</li>
+                <li><strong>Technical Proficiency:</strong> APIs, Modular Architecture, Platform Scalability, Self-Service Capabilities, AI/ML (certified in Generative, Predictive and Agentic AI methodologies from Institute of Product Leadership)</li>
+                <li><strong>Analytics & Tools:</strong> Pendo (Feature Adoption Metrics), Product Success Metrics (Usage, Adoption, Retention), Data-Driven Decision Making, Performance Dashboards</li>
+                <li><strong>Leadership & Collaboration:</strong> Cross-functional Team Leadership, Stakeholder Management, Customer Success Enablement, Partner Enablement, Change Management, Mentorship, Communication (Verbal & Written)</li>
+            </ul>
+        </section>
+
+        <section id="work-experience">
+            <h2>WORK EXPERIENCE</h2>
+
+            <div class="experience-item">
+                <span class="job-title">SENIOR PRODUCT MANAGER</span>
+                <span class="job-duration">(March 2022 – Present)</span>
+                <span class="company-name">ADP</span>
+                <ul>
+                    <li>Led product vision and roadmap for critical payroll and payment solutions, directly contributing to a <strong>35% increase in transaction efficiency</strong>.</li>
+                    <li>Delivered key features that streamlined payroll operations and enhanced user experience, resulting in a <strong>10% reduction in overall processing time</strong>:
+                        <ul class="nested-list">
+                            <li>Payroll Lock with Controlled Updates: Designed and implemented a feature allowing payroll practitioners to manage changes flowing into a locked pay group, providing visibility and control over critical pay elements, ensuring data integrity and compliance during processing.</li>
+                            <li>Payroll Processing Groups: Introduced functionality to group multiple pay groups based on frequency, type, and pay date, enabling bulk processing and providing consolidated payroll registers and summaries in Excel and PDF formats, significantly enhancing efficiency for large-scale operations.</li>
+                            <li>Stop, Reverse, and Reissue Payments: Integrated capabilities with international money movement systems for both the US and Canada, enabling users to manage payment exceptions (stop, reissue, repost) from a single screen, eliminating the need to navigate multiple systems and improving operational fluidity.</li>
+                        </ul>
+                    </li>
+                    <li>Spearheaded initiatives to enhance client self-service, transforming worker data corrections from a painstaking manual, consultant-driven process (CRUD pages) to a client-facing, self-service model, leading to a significant reduction in service tickets.</li>
+                    <li>Enhanced termination usability and job change usability features, further streamlining HR processes and improving user satisfaction.</li>
+                    <li>Managed backlog prioritization and product release schedules, increasing team productivity by 15%.</li>
+                    <li>Utilized Pendo for tracking feature adoption metrics, providing data-driven insights for continuous product improvement and strategic roadmap adjustments.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <span class="job-title">PRODUCT MANAGER</span>
+                <span class="job-duration">(October 2019 – March 2022)</span>
+                <span class="company-name">Solultima Technologies Pvt Ltd</span>
+                <ul>
+                    <li>Delivered custom banking and cryptocurrency mobile applications (B21), achieving a <strong>98% client satisfaction rate</strong> and a <strong>30% increase in mobile app downloads</strong> across 86 countries.</li>
+                    <li>Spearheaded product launches for banking clients, contributing to <strong>20% revenue growth</strong> within the first year by defining innovative features and ensuring market alignment.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <span class="job-title">SENIOR CONSULTANT</span>
+                <span class="job-duration">(July 2018 – September 2019)</span>
+                <span class="company-name">Hitachi Technologies</span>
+                <ul>
+                    <li>Managed end-to-end product lifecycle, resulting in a <strong>25% faster time-to-market</strong> for key product features by optimizing development workflows and cross-functional collaboration.</li>
+                    <li>Collaborated with UX teams to improve the user interface, leading to an <strong>18% increase in user retention</strong>.</li>
+                </ul>
+            </div>
+
+            <h3 style="margin-top: 30px;">EARLY CAREER</h3>
+
+            <div class="experience-item">
+                <span class="job-title">ASSOCIATE VENDOR MANAGER</span>
+                <span class="job-duration">(January 2014 – June 2018)</span>
+                <span class="company-name">Wave Crest Payment Technologies</span>
+                <ul>
+                    <li>Oversaw the development of fintech payment solutions, increasing platform reliability by <strong>40%</strong> and reducing transaction failure rates by <strong>15%</strong>.</li>
+                    <li>Collaborated with business units and technology teams to roll out payment solutions, contributing to a <strong>20% rise in transaction volume</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <span class="job-title">ASSISTANT MANAGER</span>
+                <span class="job-duration">(July 2011 – December 2013)</span>
+                <span class="company-name">Google deployed by JLL</span>
+                <ul>
+                    <li>Managed RFP and auction events; achieved <strong>10% savings</strong> across indirect procurement categories.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <span class="job-title">PROCUREMENT EXECUTIVE</span>
+                <span class="job-duration">(March 2010 – June 2011)</span>
+                <span class="company-name">DuPont</span>
+                <ul>
+                    <li>Led RFP and auction processes, generating cost reductions of <strong>10%</strong> across procurement categories.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <span class="job-title">AUDIT EXECUTIVE</span>
+                <span class="job-duration">(November 2006 – March 2010)</span>
+                <span class="company-name">HSBC</span>
+                <ul>
+                    <li>Ensured <strong>100% compliance</strong> with AML policies, helping mitigate financial risk across internal audit scopes.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <span class="job-title">ASSISTANT ADVERTISEMENTS OFFICER</span>
+                <span class="job-duration">(July 2005 – October 2006)</span>
+                <span class="company-name">The Hindu</span>
+                <ul>
+                    <li>Boosted ad revenues by <strong>12%</strong> via client engagement and campaign strategy.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>EDUCATION</h2>
+
+            <div class="education-item">
+                <span class="education-degree">MASTERS OF BUSINESS ADMINISTRATION</span>
+                <span class="education-institution">Marketing, ICFAI University, Dehradun, India</span>
+            </div>
+
+            <div class="education-item">
+                <span class="education-degree">BACHELOR OF COMPUTER APPLICATIONS</span>
+                <span class="education-institution">Computer Science, Andhra University</span>
+            </div>
+
+            <div class="education-item">
+                <span class="education-degree">INTERMEDIATE</span>
+                <span class="education-institution">Saraswathi Vidya Mandir</span>
+            </div>
+        </section>
+
+        <section id="personal-dossier">
+            <h2>PERSONAL DOSSIER</h2>
+            <ul class="personal-dossier">
+                <li>Date of Birth: 05th July, 1981</li>
+                <li>Nationality: Indian</li>
+                <li>Marital Status: Married</li>
+                <li>Languages known: Telugu, Hindi and English</li>
+                <li>Address: Flat 307, Tower 1, Praneeth Jagruthi Elite, Osman Nagar, Hyderabad</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
